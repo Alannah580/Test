@@ -1,0 +1,105 @@
+* {
+	/* These will reset the behaviour of padding so your width doesn't get bigger if you add padding */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.container1 {
+	width: 50%;
+	/*makes background go center*/
+	margin: 100px 25%;
+	height: 400px;
+	background-color: #db87ff;
+	/*try to use flex - it's easier to use than absolute*/
+	display: flex;
+	justify-content: center;
+	/*puts circle and square on top of each other instead of next*/
+	align-items: center;
+	flex-direction: column;
+}
+
+.flex1 {
+	width: 150px;
+	height: 150px;
+	background-color: #03fce3;
+}
+
+.flex2 {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border-radius: 50%;
+	/*makes the two overlap*/
+	margin-top: -50px;
+}
+
+.container2 {
+	width: 50%;
+	height: 400px;
+	margin: 0px 25%;
+	background-color: #87ff97;
+	position: relative;
+
+}
+
+.item1 {
+	width: 150px;
+	height: 150px;
+	background-color: #87d5ff;
+	position: absolute;
+	/*measure from very top left of page unless change container to position: relative; - resets origin*/
+	left: 50%;
+	/*base it off the width - negative half width*/
+	margin-left: -75px;
+	top: 50%;
+	margin-top: -75px;
+}
+
+.item2 {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+
+	left: 50%;
+	margin-left: -100px;
+
+}
+
+.container3 {
+	background-color: #f7b8fc;
+	/*vh makes it in terms of the screen - this takes up the entirety of the screen*/
+	/*changes with screen size*/
+	height: 100vh;
+	padding: 50px;
+}
+
+.container4 {
+	height: 600px;
+	padding: 50px;
+	background-color: #b8fcfc;
+}
+
+.sticky {
+	font-family: sans-serif;
+	/*gets rid of white space up top*/
+	margin-top: 0px;
+	position: sticky;
+	top: 100px;
+}
+
+
+
+
+
+
+
+
